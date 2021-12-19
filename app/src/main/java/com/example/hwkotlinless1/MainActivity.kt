@@ -13,8 +13,15 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnPush.setOnClickListener(){
-            binding.resultButtonPush.text = getString(R.string.push)
+        val dataClass = DataClass("Friday", 3)
+
+        binding.apply {
+            btnPush.setOnClickListener(){
+                resultButtonPush.text = getString(R.string.push)
+                week.text = dataClass.week
+                day.text = dataClass.day.toString()
+            }
         }
+
     }
 }
