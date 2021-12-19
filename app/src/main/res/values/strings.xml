@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">HW Kotlin less1</string>
+    <string name="push">Кнопка нажата</string>
+    <string name="not_push">Кнопка не была нажата</string>
+    <string name="push_button">Нажми</string>
 </resources>
