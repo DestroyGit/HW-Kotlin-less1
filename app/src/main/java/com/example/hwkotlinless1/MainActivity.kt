@@ -14,12 +14,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val dataClass = DataClass("Friday", 3)
+        val copyDataClass = dataClass.copy(day = 4)
 
         binding.apply {
             btnPush.setOnClickListener(){
                 resultButtonPush.text = getString(R.string.push)
                 week.text = dataClass.week
                 day.text = dataClass.day.toString()
+                copyWeek.text = copyDataClass.week
+                copyDay.text = copyDataClass.day.toString()
             }
         }
 
