@@ -2,6 +2,7 @@ package com.example.hwkotlinless1
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import com.example.hwkotlinless1.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -23,6 +24,12 @@ class MainActivity : AppCompatActivity() {
                 day.text = dataClass.day.toString()
                 copyWeek.text = copyDataClass.week
                 copyDay.text = copyDataClass.day.toString()
+                repeat(5){
+                    Log.d("repeat", "${it + 1}")
+                }
+                for (i in 1..9){
+                    Log.d("for","$i")
+                }
             }
         }
 
